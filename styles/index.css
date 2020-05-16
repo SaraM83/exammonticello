@@ -1,0 +1,356 @@
+body {
+  box-sizing: border-box;
+}
+
+.header {
+  /*background-image: url(../images/tu-tram-pham.jpg);*/
+  background: linear-gradient(225deg, #7E5AFF 16.9%, #55B7FF 83.27%);
+  /*background-repeat: no-repeat;*/
+  height: 800px;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 53px 0px 0px 0px;
+  width: 1170px;
+  height: 54px;
+  margin: auto;
+}
+
+.links-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style-type: circle;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.links-list a:link {
+  text-decoration: none;
+  color: #ffff;
+}
+.links-list a:visited {
+  color: #2C4058;
+}
+.links-list a:focus {
+  color: #232377;
+}
+.links-list a:hover {
+  opacity: 0.5;
+}
+.links-list a:active {
+  color: #000000;
+}
+.links-list .about, .links-list .projects, .links-list .news, .links-list .contact {
+  padding-right: 40px;
+}
+
+.socials-links {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin-top: 0px;
+}
+.socials-links .soc {
+  padding-right: 20px;
+}
+
+.header_main {
+  margin: auto;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  /*display: flex;
+  justify-content: center;
+  align-items: center;*/
+}
+.header_main .slider_container {
+  width: 1170px;
+  margin: 160px 50px 200px 160px;
+}
+.header_main .heading {
+  font-style: normal;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 80px;
+  line-height: 98px;
+  letter-spacing: 0.1em;
+  color: #ffff;
+  margin-bottom: 20px;
+}
+.header_main .text {
+  font-style: normal;
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.3em;
+  color: #ffff;
+}
+
+.slick-dots {
+  transform: rotate(90deg);
+  position: relative;
+  left: 650px;
+  bottom: 150px;
+}
+
+.inbetween {
+  width: 1400px;
+  height: 100px;
+}
+
+.projects {
+  text-align: center;
+  height: 1367px;
+}
+.projects .projects-heading {
+  font-family: "Montserrat", sans-serif;
+  color: #2C4058;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 44px;
+  line-height: 54px;
+}
+
+.projects_img_container {
+  display: flex;
+  margin: 89px 100px 0px 0px;
+  padding-right: 100px;
+  position: absolute;
+}
+.projects_img_container .projects_img {
+  position: absolute;
+  left: -440px;
+  top: 70px;
+}
+.projects_img_container .projects_field {
+  position: absolute;
+  z-index: -1;
+  right: 200px;
+}
+
+.projects_img_container_2 {
+  display: flex;
+  margin: 89px 0px 0px 0px;
+  position: absolute;
+  top: 1500px;
+}
+.projects_img_container_2 .projects_field_2 {
+  position: absolute;
+  z-index: -1;
+  left: 225px;
+}
+.projects_img_container_2 .projects_img_2 {
+  position: absolute;
+  left: 50px;
+  top: 70px;
+}
+
+.projects_container, .projects_container_2 {
+  display: flex;
+  justify-content: space-evenly;
+}
+.projects_container .projects_text, .projects_container_2 .projects_text {
+  text-align: left;
+  padding: 120px 50px 0px 500px;
+  margin: 0px 100px 0px 100px;
+}
+.projects_container .projects_text .sub__title, .projects_container_2 .projects_text .sub__title {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 27px;
+  color: #2C4058;
+  margin: 0px;
+  padding: 0px 0px 26px 0px;
+}
+.projects_container .projects_text .projects__title, .projects_container_2 .projects_text .projects__title {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 44px;
+  line-height: 27px;
+  color: #2C4058;
+  padding-bottom: 19px;
+  margin: 0px;
+}
+.projects_container .projects_text .projects__text, .projects_container_2 .projects_text .projects__text {
+  font-family: "Source Sans Pro", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  color: #2C4058;
+  padding-bottom: 46px;
+  margin: 0px;
+}
+.projects_container .projects_text .add__text, .projects_container_2 .projects_text .add__text {
+  font-family: "Source Sans Pro", sans-serif;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
+  color: #000000;
+  padding-top: 60px;
+  margin: 0px;
+}
+
+.projects_text_2 {
+  margin-right: 200px;
+  text-align: left;
+  padding: 180px 100px 0px 0px;
+}
+.projects_text_2 .sub__title__2 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 27px;
+  color: #2C4058;
+  margin: 0px;
+  padding: 30px 0px 26px 0px;
+}
+.projects_text_2 .projects__title__2 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 44px;
+  line-height: 27px;
+  color: #2C4058;
+  padding-bottom: 19px;
+  margin: 0px 100px 0px 0px;
+}
+.projects_text_2 .projects__text__2 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  color: #2C4058;
+  padding-bottom: 46px;
+  margin: 0px;
+}
+.projects_text_2 .add__text__2 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
+  color: #000000;
+  padding-top: 60px;
+  margin: 0px;
+}
+
+.projects__button, .projects__button__2 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  background-color: #ffff;
+  border: 1px solid #2C4058;
+  width: 190px;
+  height: 50px;
+}
+.projects__button .projects__button:hover, .projects__button__2 .projects__button:hover {
+  opacity: 0.75;
+}
+
+.news_background {
+  background: linear-gradient(225deg, #24CCFA 11.16%, #3C7FD4 89.18%);
+  width: 1440px;
+  height: 1035px;
+}
+
+.heading_container {
+  text-align: center;
+  padding-top: 30px;
+}
+.heading_container .news-heading {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 44px;
+  line-height: 54px;
+  text-align: center;
+  color: #ffff;
+}
+
+.news_img_text {
+  background-color: #ffff;
+  width: 370px;
+  height: 514px;
+}
+.news_img_text .news-title {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 27px;
+  color: #2C4058;
+  padding: 20px 20px 0px 20px;
+}
+.news_img_text .news-text {
+  font-family: "Source Sans Pro", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  color: #2C4058;
+  padding: 0px 20px 20px 20px;
+}
+.news_img_text .news_author {
+  display: flex;
+  padding-left: 20px;
+}
+.news_img_text .news_author .author_name {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #2C4058;
+  padding-left: 20px;
+  padding-top: 5px;
+}
+.news_img_text .news_author .date {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #55B7FF;
+}
+
+.author_img1 {
+  background: url(../images/photos-13323TAfapiSrc9IO231.png);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+
+.author_img2 {
+  background: url(../images/photos-13323vsWmKApDZJIh.png);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+
+.author_img3 {
+  background: url(../images/photos-13323TAfapiSrc9IO.png);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+
+.slider_container_2 {
+  padding-top: 69px;
+  width: 1200px;
+  margin: auto;
+}
+
+/*# sourceMappingURL=index.css.map */
