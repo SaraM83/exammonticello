@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <link href="styles/norm.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
     <link href="slick-1.8.1/slick/slick-theme.css" rel="stylesheet">
     <link href="slick-1.8.1/slick/slick.css" rel="stylesheet">
     <link href="styles/index.css" rel="stylesheet">
@@ -13,16 +14,16 @@
 <body>
     <section>
         <div class="header">
-            <nav class="navigation">
+            <nav id="top" class="navigation">
                 <div class="logo">
-                    <img src="images/Logo.png">
+                    <a href="#"><img src="images/Logo.png"></a>
                 </div>
                 <div class="navigation__links">
                     <ul class="links-list">
-                        <li class="about"><a href="#">ABOUT US</a></li>
-                        <li class="projects"><a href="#">PROJECTS</a></li>
-                        <li class="news"><a href="#">NEWS</a></li>
-                        <li class="contact"><a href="#">CONTACT</a></li>
+                        <li class="about"><a href="#abt">ABOUT US</a></li>
+                        <li class="projects"><a href="#prjcts">PROJECTS</a></li>
+                        <li class="news"><a href="#nws">NEWS</a></li>
+                        <li class="contact"><a href="#cntct">CONTACT</a></li>
                     </ul>
                 </div>
                 <div class="socials__links">
@@ -59,21 +60,21 @@
                     </div>
                 </div>
                 <div class="arrow">
-                    <img src="images/Arrow.png">
+                    <a href="#prjcts"><img src="images/Arrow.png"></a>
                 </div>
             </div>
         </div>
         <div class="inbetween"></div>
     </section>
     <section>
-        <div class="projects">
+        <div id="prjcts" class="projects">
                 <img src="images/Line.png">
-                <h1 class="projects-heading">WHAT WE DO</h1>
+                <h1 class="heading_">WHAT WE DO</h1>
             <div class="projects_container">
                 <div class="projects_img_container">
                     <div class="projects_field">
-                        <img class="projects_field" src="images/Rectangle3.png">
-                        <img class="projects_img" src="images/MaskGroup.png">
+                        <img class="projects_field" src="images/Rect.png">
+                        <img class="projects_img" src="images/Mas.png">
                     </div>
                 </div>
                 <div class="projects_text">
@@ -82,11 +83,10 @@
                     <p class="projects__text">Increasing prosperity in our lives can be 
                         accomplished<br> by having the right frame of mind. The truth is, 
                         our<br> thoughts are very powerful.</p>
-                    <button class="projects__button">MORE DETAILS</button>
+                    <button class="__button">MORE DETAILS</button>
                     <p class="add__text">New York City, United States - 1776 feet</p>
                 </div>
             </div>
-            <!--Ny sida här byt namn på alla element-->
             <div class="projects_container_2">
                 <div class="projects_text_2">
                     <h3 class="sub__title__2">INTERNATIONAL</h3>
@@ -94,13 +94,13 @@
                     <p class="projects__text__2">Successful businesses have many things 
                         in common,<br> today we’ll look at the big ‘R’ of recognition 
                         and how a<br> digital advertising network may help.</p>
-                    <button class="projects__button__2">MORE DETAILS</button>
+                    <button class="__button">MORE DETAILS</button>
                     <p class="add__text__2">Hong Kong - 1588 feet</p>
                 </div>
                 <div class="projects_img_container_2">
                     <div class="projects_img_2">
-                        <img class="projects_img_2" src="images/Mask.png">
-                        <img class="projects_field_2" src="images/Rectangle.png">
+                        <img class="projects_img_2" src="images/MG.png">
+                        <img class="projects_field_2" src="images/Re.png">
                     </div>
                 </div>
             </div>
@@ -109,15 +109,15 @@
     <section>
         <div class="news_background">
             <div class="news_container">
-                <div class="heading_container">
+                <div id="nws" class="heading_container">
                     <img src="images/Line2.png">
-                    <h1 class="news-heading">LATEST NEWS</h1>
+                    <h1 class="heading_">LATEST NEWS</h1>
                 </div>
                 <div class="slider_container_2">
                     <div>
                         <div class="news_img_text">
                             <img src="images/Image.png">
-                            <h3 class="news-title">SEE THE UNMATCHED<br> BEAUTY OF THE GREAT.</h3>
+                            <a href="#"><h3 class="news-title">SEE THE UNMATCHED<br> BEAUTY OF THE GREAT.</h3></a>
                             <p class="news-text">Free directories: directories are perfect
                             for customers that are searching for...</p>
                             <div class="news_author">
@@ -130,7 +130,7 @@
                     <div>
                         <div class="news_img_text">
                             <img src="images/Image2.png">
-                            <h3 class="news-title">EFFECTIVE ADVERTISING<br> POINTERS.</h3>
+                            <a href="#"><h3 class="news-title">EFFECTIVE ADVERTISING<br> POINTERS.</h3></a>
                             <p class="news-text">Having a home based business is a<br>
                             wonderful asset to your life...</p>
                             <div class="news_author">
@@ -143,7 +143,7 @@
                     <div>
                         <div class="news_img_text">
                             <img src="images/Image3.png">
-                            <h3 class="news-title">HYPNOTIZE YOURSELF INTO THE GHOST.</h3>
+                            <a href="#"><h3 class="news-title">HYPNOTIZE YOURSELF INTO THE GHOST.</h3></a>
                             <p class="news-text">There are many things that are<br>
                             important to catalog design...</p>
                             <div class="news_author">
@@ -196,8 +196,82 @@
             </div>
         </div>
     </section>
-    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <section>
+        <div class="gallery">
+            <div class="gallery_heading">
+                <img src="images/Line.png">
+                <h1 class="heading_">GALLERY</h1>
+            </div>
+            <div class="gallery_container">
+                <div class="img_1_div">
+                    <img class="img_" src="images/Img.png">
+                </div>
+                <div class="big_img_container">
+                    <div class="small-img-flex">
+                        <div class="smaller-div">
+                            <img class="img_" src="images/Img2.png">
+                        </div>
+                        <div class="smaller-div">
+                            <img class="img_" src="images/Img3.png">
+                        </div>
+                    </div>
+                    <div class="small-img-flex">
+                        <div class="smaller-div">
+                            <img class="img_" src="images/Img4.png">
+                        </div>
+                        <div class="smaller-div">
+                            <img class="img_" src="images/Img5.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery_button">
+                <button class="__button">SEE MORE</button>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="background_container">
+            <div id="google_map"></div><!--google map här-->
+            <div id="cntct" class="contact_container">
+                    <img src="images/Line.png">
+                    <h1 class="heading_">GET IN TOUCH</h1>
+                <div class="contact_flex_container">
+                    <div class="contact_list">
+                        <p class="list-item"><i class="fas fa-map-marker-alt"></i>91 Nolan Extensions Suite 670</p>
+                        <p class="list-item"><i class="fas fa-phone-alt"></i>+001 356-868-2454</p>
+                        <p class="list-item"><i class="fas fa-inbox"></i><a href="mailto:montichello@service.com">montichello@service.com</a></p>
+                        <p class="list-item"><i class="far fa-clock"></i>From 07:05AM to 19:30PM</p>
+                    </div>
+                    <div class="form_container">
+                        <form name="get-in-touch">
+                            <input type="text" id="name" name="name" placeholder="Name Lastname"><br>
+                            <input type="text" id="email" name="email" placeholder="Email"><br><br>
+                            <div class="submit_button"><input type="submit" value="SUBMIT" class="submit-button"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <footer class="footer"><!--flex-->
+                <div class="footer_logo">
+                    <a href="#top"><img src="images/Logo.png"></a>
+                    <p class="logo-text">Copyrights © 2020 Montichello</p>
+                </div>
+                <div class="socials__links">
+                    <ul class="socials-links"><!--flex-->
+                        <li class="soc"><a href="#"><img src="images/Group3.png"></a></li>
+                        <li class="soc"><a href="#"><img src="images/Group2.png"></a></li>
+                        <li class="soc"><a href="#"><img src="images/Group1.png"></a></li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+    </section>
+    <script src="https://maps.googleapis.com/maps/api/staticmap?key=AIzaSyDtF_hmUEa4TaNumTorTNElCxOXoTrYUys&center=47.65,-122.35&zoom=12&format=png&maptype=roadmap&style=element:geometry%7Ccolor:0xf5f5f5&style=element:labels.icon%7Cvisibility:off&style=element:labels.text.fill%7Ccolor:0x616161&style=element:labels.text.stroke%7Ccolor:0xf5f5f5&style=feature:administrative.land_parcel%7Celement:labels.text.fill%7Ccolor:0xbdbdbd&style=feature:poi%7Celement:geometry%7Ccolor:0xeeeeee&style=feature:poi%7Celement:labels.text.fill%7Ccolor:0x757575&style=feature:poi.park%7Celement:geometry%7Ccolor:0xe5e5e5&style=feature:poi.park%7Celement:labels.text.fill%7Ccolor:0x9e9e9e&style=feature:road%7Celement:geometry%7Ccolor:0xffffff&style=feature:road.arterial%7Celement:labels.text.fill%7Ccolor:0x757575&style=feature:road.highway%7Celement:geometry%7Ccolor:0xdadada&style=feature:road.highway%7Celement:labels.text.fill%7Ccolor:0x616161&style=feature:road.local%7Celement:labels.text.fill%7Ccolor:0x9e9e9e&style=feature:transit.line%7Celement:geometry%7Ccolor:0xe5e5e5&style=feature:transit.station%7Celement:geometry%7Ccolor:0xeeeeee&style=feature:water%7Celement:geometry%7Ccolor:0xc9c9c9&style=feature:water%7Celement:labels.text.fill%7Ccolor:0x9e9e9e&size=480x360"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtF_hmUEa4TaNumTorTNElCxOXoTrYUys"></script>
+    <script src="https://kit.fontawesome.com/6bafa4d9a2.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
     <script src="slick-1.8.1/slick/slick.min.js"></script>
     <script src="slick-1.8.1/slick/slick.js"></script>
     <script src="scripts/index.js"></script>
